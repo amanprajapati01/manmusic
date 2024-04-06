@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+*{
+  margin:0;
+  padding: 0;
+  
+}
+
+
+nav{
+  font-family: 'Architects Daughter', cursive;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  color: white;
+  background-color: rgb(44, 188, 255);
+}
+
+nav ul li{
+  padding: 0 12px;
+}
+.brand img{
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand{
+  color: #000000;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.container{
+  min-height: 72vh;
+  background-color: rgba(44, 188, 255,0.3);
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(44, 188, 255);
+  color: white;
+  font-family: 'Lobster', cursive;
+  display: flex;
+  width: 70%;
+  border-radius: 8px;
+  margin: 23px auto;
+  padding: 34px;
+  
+}
+
+.songList{
+  width: 100%;
+  color: #ffffff;
+}
+
+.bottom{
+  position: sticky;
+  height: 130px;
+  background-color: rgb(44, 188, 255);
+  color: rgb(0, 0, 0);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+
+.bottom input[type="range" i] {
+  color: light-dark(rgb(126, 126, 126), rgb(0, 0, 0));
+ }
+
+.icons{
+  color: #000000;
+  margin-top: 14px;
+}
+
+.icons i{
+  cursor: pointer;
+}
+
+#myProgressBar{
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItemcontainer{
+  margin-top: 74px;
+  
+}
+
+.songItem{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(44, 188, 255);
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  border-style: solid;
+  border-width: thin;
+  border-color: #20ddff;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 43px;
+}
+
+.songItem img{
+  width: 43px;
+  margin: 0 23px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #fff708;
+  border-radius: 24px;
+}
+.songList{
+  color: rgb(0, 0, 0);
+}
+.timestamp{
+  margin: 0 7px;
+}
+
+.timestamp i{
+  cursor:pointer;
+}
+
+.songInfo{
+  /*position: absolute;
+  left: 10vw;*/
+  font-family: 'Lobster', cursive;
+
+}
+
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+}
